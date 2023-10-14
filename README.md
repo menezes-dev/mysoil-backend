@@ -17,46 +17,48 @@ Rota utilizada para criar uma informação:
 
 #### Request
 
-    ```json
-    {
-        "category": "Categoria 1",
-        "title": "Título 1",
-        "text": "Texto da Informação 1 ...",
-        "img": "http://link-da-sua-imagem.jpeg"
-    }
-    ```
+```json
+{
+  "category": "Categoria 1",
+  "title": "Título 1",
+  "text": "Texto da Informação 1 ...",
+  "img": "http://link-da-sua-imagem.jpeg"
+}
+```
 
 #### Response
 
-    {
-        "message": "Informação criada com sucesso"
-    }
+```json
+{
+  "message": "Informação criada com sucesso"
+}
+```
 
 `GET /informations`
 Rota que fornece a lista de informações disponíveis no banco:
 
 #### Response
 
-    ```json
-    [
-        {
-            "createdAt": 169725059548,
-            "category": "Categoria 1",
-            "title": "Título 1",
-            "text": "Texto da Informação 1 ...",
-            "img": "http://link-da-sua-imagem.jpeg",
-            "uid": "JhystSadasDpouZ"
-        },
-        {
-            "createdAt": 169725059548,
-            "category": "Categoria 2",
-            "title": "Título 2",
-            "text": "Texto da Informação 2 ...",
-            "img": "http://link-da-sua-imagem2.jpeg",
-            "uid": "JhystSadasDpouZ"
-        },
-    ]
-    ```
+```json
+[
+  {
+    "createdAt": 169725059548,
+    "category": "Categoria 1",
+    "title": "Título 1",
+    "text": "Texto da Informação 1 ...",
+    "img": "http://link-da-sua-imagem.jpeg",
+    "uid": "JhystSadasDpouZ"
+  },
+  {
+    "createdAt": 169725059548,
+    "category": "Categoria 2",
+    "title": "Título 2",
+    "text": "Texto da Informação 2 ...",
+    "img": "http://link-da-sua-imagem2.jpeg",
+    "uid": "JhystSadasDpouZ"
+  }
+]
+```
 
 (A chave "createdAt" diz respeito ao timestamp da hora em que a informação foi criada)
 
@@ -65,42 +67,42 @@ Rota para recuperar uma informação específica:
 
 #### Response
 
-    ```json
-    {
-        "id": "JhystSadasDpouZ",
-        "data": {
-            "img": "http://link-da-sua-imagem2.jpeg",
-            "text": "Texto da Informação 2 ...",
-            "title": "Título 2",
-            "category": "Categoria 2"
-        }
-    }
-    ```
+```json
+{
+  "id": "JhystSadasDpouZ",
+  "data": {
+    "img": "http://link-da-sua-imagem2.jpeg",
+    "text": "Texto da Informação 2 ...",
+    "title": "Título 2",
+    "category": "Categoria 2"
+  }
+}
+```
 
 `PATCH /informations/:id`
 Rota para editar uma informação específica:
 
 #### Request
 
-    ```json
-    {
-        "title": "Título 2 - Editado"
-    }
-    ```
+```json
+{
+  "title": "Título 2 - Editado"
+}
+```
 
 #### Response
 
-    ```json
-    {
-        "id": "JhystSadasDpouZ",
-        "data": {
-            "img": "http://link-da-sua-imagem2.jpeg",
-            "text": "Texto da Informação 2 ...",
-            "title": "Título 2",
-            "category": "Categoria 2"
-        }
-    }
-    ```
+```json
+{
+  "id": "JhystSadasDpouZ",
+  "data": {
+    "img": "http://link-da-sua-imagem2.jpeg",
+    "text": "Texto da Informação 2 ...",
+    "title": "Título 2",
+    "category": "Categoria 2"
+  }
+}
+```
 
 `DELETE /informations/:id`
 Rota para deletar uma informação específica:
