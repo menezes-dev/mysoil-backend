@@ -17,12 +17,14 @@ Rota utilizada para criar uma informação:
 
 #### Request
 
+    ```json
     {
         "category": "Categoria 1",
         "title": "Título 1",
         "text": "Texto da Informação 1 ...",
         "img": "http://link-da-sua-imagem.jpeg"
     }
+    ```
 
 #### Response
 
@@ -35,6 +37,7 @@ Rota que fornece a lista de informações disponíveis no banco:
 
 #### Response
 
+    ```json
     [
         {
             "createdAt": 169725059548,
@@ -53,6 +56,7 @@ Rota que fornece a lista de informações disponíveis no banco:
             "uid": "JhystSadasDpouZ"
         },
     ]
+    ```
 
 (A chave "createdAt" diz respeito ao timestamp da hora em que a informação foi criada)
 
@@ -61,6 +65,7 @@ Rota para recuperar uma informação específica:
 
 #### Response
 
+    ```json
     {
         "id": "JhystSadasDpouZ",
         "data": {
@@ -70,18 +75,22 @@ Rota para recuperar uma informação específica:
             "category": "Categoria 2"
         }
     }
+    ```
 
 `PATCH /informations/:id`
 Rota para editar uma informação específica:
 
 #### Request
 
+    ```json
     {
         "title": "Título 2 - Editado"
     }
+    ```
 
 #### Response
 
+    ```json
     {
         "id": "JhystSadasDpouZ",
         "data": {
@@ -91,6 +100,7 @@ Rota para editar uma informação específica:
             "category": "Categoria 2"
         }
     }
+    ```
 
 `DELETE /informations/:id`
 Rota para deletar uma informação específica:
