@@ -6,9 +6,15 @@ Essa API faz parte da solução do time Yapuhcakip para o Hackathon CPAmazônia 
 
     npm install
 
+![npmInstall](https://github.com/menezes-dev/mysoil-backend/assets/102121794/f8f6498b-66e4-480f-b527-5ae643757b2f)
+
 ### Ou se preferir, acessa a URL base através de seu ApiClient preferido:
 
     https://api-mysoil.onrender.com
+
+#### * Caso você use o Insomnia com ApiClient, você pode baixar a Coleção de requisições aqui, e importar como mostra o vídeo abaixo:
+
+https://github.com/menezes-dev/mysoil-backend/assets/102121794/1339e7b7-57ee-4d51-b49f-dda9e73b3038
 
 ### Endpoints
 
