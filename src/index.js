@@ -1,7 +1,7 @@
 import express from "express";
 import admin from "firebase-admin";
-import informationsRoutes from "./src/routes/information.routes.js";
-import cultivationRoutes from "./src/routes/cultivation.routes.js";
+import informationsRoutes from "./routes/information.routes.js";
+import cultivationRoutes from "./routes/cultivation.routes.js";
 
 const app = express();
 
@@ -13,4 +13,4 @@ admin.initializeApp({
   credential: admin.credential.cert("serviceKey.json"),
 });
 
-app.listen(3000, () => console.log("Rodando em http://localhost:3000"));
+app.listen(3000, () => console.log("Servidor em atividade!"));
